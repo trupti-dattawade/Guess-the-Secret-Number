@@ -1,2 +1,12 @@
 .env
+.env.*
+secrets*.json
+credentials*.json
+*.pem
+*.key
+*.p12
+*.crt
+*.cer
+__pycache__
 venv/
+
