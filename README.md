@@ -1,38 +1,66 @@
 # Guess the Secret Number
 
-A simple head-to-head number guessing game built with Python and Tkinter.
+`Guess the Secret Number` is a simple desktop number-guessing game where the player and the AI challenge each other in the same window. It is designed as a clean Python GUI project with a professional-looking Tkinter interface and straightforward game logic.
 
-## Game Play
+## What This Game Does
 
-- The match is played over 5 rounds.
-- Each round, the player enters a secret number from **1 to 100**.
-- The AI randomly picks its own secret number.
-- The player guesses the AI's secret first.
-- After each player guess, the game tells the player if the AI's secret is **higher** or **lower**.
-- Then the AI makes a guess at the player's secret.
-- The player responds with **Higher**, **Lower**, or **Correct**.
-- The game tracks valid numeric bounds for AI feedback and detects invalid rule-breaking answers.
-- The first side to guess correctly wins the round.
-- After 5 rounds, the final match winner is displayed.
+The game includes two parallel challenges:
+
+- The AI tries to guess your secret number between `1` and `100`.
+- You try to guess the AI's secret number between `1` and `100`.
+
+The interface is split into clear sections so both parts of the game are easy to play.
+
+## How To Play
+
+### 1. Let the AI guess your number
+
+1. Enter a secret number from `1` to `100`.
+2. Click `Start AI Round`.
+3. The AI will make a guess.
+4. Use the buttons to guide it:
+   - `Higher` if your number is bigger
+   - `Lower` if your number is smaller
+   - `Correct` if the AI guessed right
+
+### 2. Guess the AI's number
+
+1. Enter your guess in the player section.
+2. Click `Submit Guess`.
+3. The game will tell you whether your guess is too high, too low, or correct.
+4. If you guess correctly, a new AI secret number is generated automatically.
 
 ## Features
 
-- Difficulty modes:
-  - Easy: 10 attempts per side
-  - Medium: 7 attempts per side
-  - Hard: 5 attempts per side
-- Continuous interactive GUI using Tkinter
-- User input validation for numbers and bounds
-- AI feedback validation and cheating detection
-- Friendly log output and status updates
+- Clean and modern Tkinter desktop UI
+- Card-based layout for better readability
+- AI guessing logic based on binary search
+- Player guessing system with instant feedback
+- Input validation for numbers from `1` to `100`
+- Match activity log that records game events
+- Built entirely with Python standard library modules
+
+## Built With
+
+This game was created using:
+
+- `Python` for the game logic
+- `Tkinter` for the graphical user interface
+- `ttk` for styled modern widgets
+- `random` for generating the AI's secret number
+
+## Project Structure
+
+- `main.py` - contains the full game logic and UI code
+- `README.md` - project documentation
 
 ## Requirements
 
-- Python 3.8 or later
+- Python `3.8` or later
 
-## Run the Game
+## Run The Game
 
-From the repository root:
+From the project folder, run:
 
 ```bash
 python main.py
@@ -40,5 +68,5 @@ python main.py
 
 ## Notes
 
-- The game is implemented in `main.py`.
-- No external dependencies are required beyond the Python standard library.
+- No external packages are required.
+- The project currently uses a single-file implementation for simplicity.
