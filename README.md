@@ -1,15 +1,15 @@
 # Guess the Secret Number
 
-`Guess the Secret Number` is a simple desktop number-guessing game where the player and the AI challenge each other in the same window. It is designed as a clean Python GUI project with a professional-looking Tkinter interface and straightforward game logic.
+`Guess the Secret Number` is a simple desktop number-guessing game where the player and the AI challenge each other in the same window across a 5-round match. It is designed as a clean Python GUI project with a professional-looking Tkinter interface and straightforward game logic.
 
 ## What This Game Does
 
-The game includes two parallel challenges:
+The game includes two parallel challenges inside each round:
 
 - The AI tries to guess your secret number between `1` and `100`.
 - You try to guess the AI's secret number between `1` and `100`.
 
-The interface is split into clear sections so both parts of the game are easy to play.
+The interface is split into clear sections so both parts of the game are easy to play, and a scoreboard tracks results across all 5 rounds.
 
 ## How To Play
 
@@ -28,12 +28,24 @@ The interface is split into clear sections so both parts of the game are easy to
 1. Enter your guess in the player section.
 2. Click `Submit Guess`.
 3. The game will tell you whether your guess is too high, too low, or correct.
-4. If you guess correctly, a new AI secret number is generated automatically.
+4. If you guess correctly, you win that round.
+
+### 3. Match scoreboard
+
+1. The game tracks results for `5` rounds.
+2. Each round is awarded to either the `Player` or the `AI`.
+3. The scoreboard shows:
+   - current round number
+   - player score
+   - AI score
+   - round-by-round winners
+4. After round 5, the final match winner is displayed.
 
 ## Features
 
 - Clean and modern Tkinter desktop UI
 - Card-based layout for better readability
+- 5-round scoreboard with round-by-round results
 - AI guessing logic based on binary search
 - Player guessing system with instant feedback
 - Input validation for numbers from `1` to `100`
